@@ -293,6 +293,7 @@ a:hover { color: var(--vermilion); text-decoration-color: currentColor; }
 .grid-2 + .finance-tiles, .finance-tiles + .grid-2, .card + .finance-tiles { margin-top: 1.25rem; }
 
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.grid-2.align-start { align-items: start; }
 
 .card-kicker {
   display: flex;
@@ -416,7 +417,7 @@ a:hover { color: var(--vermilion); text-decoration-color: currentColor; }
   color: var(--ink-2);
 }
 
-.policy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1.25rem; }
+.policy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1.25rem; counter-reset: policy; }
 
 .policy-card { position: relative; overflow: hidden; display: flex; flex-direction: column; }
 .policy-card h3 { display: flex; align-items: center; gap: 0.55rem; font-size: 1.08rem; }
@@ -431,21 +432,30 @@ a:hover { color: var(--vermilion); text-decoration-color: currentColor; }
 .policy-list { list-style: none; margin-top: 0.8rem; flex: 1; }
 .policy-list li {
   position: relative;
-  padding: 0.42rem 0 0.42rem 1rem;
+  padding: 0.42rem 0 0.42rem 1.8rem;
   font-size: 0.85rem;
   line-height: 1.75;
   color: var(--ink-2);
   border-top: 1px solid var(--hairline);
+  counter-increment: policy;
 }
 .policy-list li::before {
-  content: "";
+  content: counter(policy, decimal-leading-zero);
   position: absolute;
-  left: 0.1rem;
-  top: 1.05em;
-  width: 0.32rem;
-  height: 1.5px;
-  background: var(--vermilion);
+  left: 0;
+  top: 0.6rem;
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 0.82rem;
+  line-height: 1;
+  color: var(--vermilion);
+  opacity: 0.85;
 }
+
+/* independent numbering for lists reusing the policy-list look (e.g. 議会の論点) */
+.topics-list { counter-reset: topic; }
+.topics-list li { counter-increment: topic; }
+.topics-list li::before { content: counter(topic, decimal-leading-zero); }
 .policy-list strong { color: var(--ink); font-weight: 700; }
 
 /* ==========================================================================
