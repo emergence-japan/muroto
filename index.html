@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>室戸ポータル | 高知県室戸市の政治・経済データ(非公式)</title>
+  <meta name="description" content="高知県室戸市の市政・議会、人口・産業、予算・財政を一次資料ベースで一望する非公式データポータル。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23c2492f'/%3E%3Ctext x='50' y='74' font-size='62' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'%3E室%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">室</span>
+      <span class="brand-text">
+        <span class="brand-title">室戸ポータル</span>
+        <span class="brand-sub">MUROTO CIVIC PORTAL</span>
+      </span>
+    </a>
+    <nav class="global-nav" aria-label="サイト内ナビゲーション">
+      <a href="#seiji">市政・議会</a>
+      <a href="#keizai">経済・産業</a>
+      <a href="#zaisei">予算・財政</a>
+      <a href="#bunseki">分析</a>
+      <a href="#news">ニュース</a>
+      <a href="#links">情報源</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <span class="hero-vertical" aria-hidden="true">室戸市</span>
+    <div class="hero-inner">
+      <p class="hero-kicker">高知県室戸市 政治・経済ポータル<span class="unofficial-badge">非公式</span></p>
+      <h1 id="hero-heading">数字で読む、<br><em>室戸</em>のいま。</h1>
+      <p class="hero-lead">
+        太平洋へ突き出す岬のまち・室戸。人口減少の最前線に立ちながら、
+        海洋深層水、ジオパーク、キンメダイのまちは何に投資し、どこへ向かうのか。
+        市政・議会と経済・財政を、公表された一次資料ベースで一望します。
+      </p>
+      <div class="hero-kpis" role="list">
+        <div class="kpi" role="listitem">
+          <span class="kpi-label">推計人口</span>
+          <span class="kpi-value">9,684<span class="kpi-unit">人</span></span>
+          <span class="kpi-delta down">前月比 −25人</span>
+          <span class="kpi-note">令和8年6月1日現在(高知県推計人口)</span>
+        </div>
+        <div class="kpi" role="listitem">
+          <span class="kpi-label">高齢化率(65歳以上)</span>
+          <span class="kpi-value">55.2<span class="kpi-unit">%</span></span>
+          <span class="kpi-delta">65歳以上 5,342人</span>
+          <span class="kpi-note">令和8年6月1日現在(同上)</span>
+        </div>
+        <div class="kpi" role="listitem">
+          <span class="kpi-label">一般会計当初予算</span>
+          <span class="kpi-value">198.6<span class="kpi-unit">億円</span></span>
+          <span class="kpi-delta">前年度比 +13.2%</span>
+          <span class="kpi-note">令和8年度(広報むろと2026年6月号)</span>
+        </div>
+        <div class="kpi" role="listitem">
+          <span class="kpi-label">財政力指数</span>
+          <span class="kpi-value">0.22</span>
+          <span class="kpi-delta">将来負担比率は算定なし</span>
+          <span class="kpi-note">令和6年度決算(財政状況資料集)</span>
+        </div>
+      </div>
+      <p class="hero-meta">データ時点: 2026年7月3日編集 / 各数値の出典は本文に明記</p>
+    </div>
+  </section>
+
+  <!-- ============ 01 市政・議会 ============ -->
+  <section id="seiji" class="section" aria-labelledby="seiji-heading">
+    <header class="section-head">
+      <span class="section-no">01</span>
+      <div>
+        <p class="section-kicker">POLITICS &amp; COUNCIL</p>
+        <h2 id="seiji-heading">市政・議会</h2>
+      </div>
+    </header>
+
+    <div class="stat-strip" role="list" aria-label="数字で見る市政・議会">
+      <div class="stat" role="listitem">
+        <span class="stat-label">議員定数</span>
+        <span class="stat-value">12<small>人</small></span>
+        <span class="stat-note">直近の定例会では5人が一般質問に立つ</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat-label">定例会</span>
+        <span class="stat-value">年4<small>回</small></span>
+        <span class="stat-note">3・6・9・12月に開催(臨時会は随時)</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat-label">直近定例会の議題</span>
+        <span class="stat-value">14<small>件</small></span>
+        <span class="stat-note">令和8年6月定例会(議案13件+諮問1件)</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat-label">今年3月に可決</span>
+        <span class="stat-value">42<small>議案</small></span>
+        <span class="stat-note">令和8年度予算・統合中学校の建設契約など</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat-label">政策マップ</span>
+        <span class="stat-value">6<small>分野</small>22<small>施策</small></span>
+        <span class="stat-note">主な行政計画8本から当サイトが整理(下に一覧)</span>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <article class="card mayor-card">
+        <p class="card-kicker">市長</p>
+        <h3 class="mayor-name">植田 壯一郎 <span class="mayor-kana">うえだ そういちろう</span></h3>
+        <ul class="fact-list">
+          <li><span>就任</span>2018年12月4日(現在2期目)</li>
+          <li><span>前回選挙</span>2022年11月20日執行 — 得票 3,527票(得票率72.9%)で再選。投票率 45.74%</li>
+          <li><span>進退</span>病気治療を理由に、次期市長選への不出馬を表明(2026年6月報道)</li>
+          <li><span>教育長</span>百田 貴昌</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page0553.php" target="_blank" rel="noopener">市長プロフィール(市公式)</a> / <a href="https://www.city.muroto.kochi.jp/pages/page2348.php" target="_blank" rel="noopener">令和4年市長選挙開票結果(市公式)</a> / <a href="https://www.kochinews.co.jp/tag/detail/city_muroto" target="_blank" rel="noopener">高知新聞(2026年6月13日)</a></p>
+      </article>
+
+      <article class="card highlight-card">
+        <p class="card-kicker">注目</p>
+        <h3>次の市長選挙は 2026年11月15日 投票</h3>
+        <p>現市長の任期満了は2026年12月3日。告示は11月8日の予定です。植田市長が不出馬を表明しているため、<strong>8年ぶりに市政のトップが交代する見通し</strong>。これまでに新人の谷口洋介氏が出馬を表明しています(2026年6月報道)。</p>
+        <p class="card-source">出典: <a href="https://go2senkyo.com/local/senkyo/25847" target="_blank" rel="noopener">選挙ドットコム(室戸市長選挙)</a> / <a href="https://www.kochinews.co.jp/tag/detail/city_muroto" target="_blank" rel="noopener">高知新聞</a></p>
+      </article>
+    </div>
+
+    <div class="subsection-head">
+      <h3>室戸市の政策</h3>
+      <span class="subsection-en">POLICY MAP</span>
+    </div>
+
+    <article class="card plan-card">
+      <p class="card-kicker">まちづくりの設計図</p>
+      <p>市の最上位計画は<strong>室戸市総合振興計画</strong>(令和3〜11年度)。掲げる将来像は——</p>
+      <p class="plan-vision">「みんなが生き生きと活躍し、健康と幸せと豊かさを実感できるまち」</p>
+      <p>令和7〜11年度の後期基本計画とデジタル田園都市構想総合戦略が現在の実行計画で、令和8年度予算の重点「命を守る」「室戸を創る」もこの体系に沿っています。分野別には次のような計画群が政策の土台になっています。</p>
+      <div class="plan-chips">
+        <span>後期基本計画(令和7〜11年度)</span>
+        <span>デジタル田園都市構想総合戦略</span>
+        <span>過疎地域持続的発展計画(令和8〜12年度)</span>
+        <span>国土強靭化地域計画</span>
+        <span>地域公共交通計画</span>
+        <span>観光基本構想</span>
+        <span>子ども・子育て支援計画</span>
+      </div>
+      <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page3164.php" target="_blank" rel="noopener">後期基本計画・総合戦略(市公式)</a> / <a href="https://www.city.muroto.kochi.jp/pages/page3493.php" target="_blank" rel="noopener">過疎地域持続的発展計画(市公式)</a></p>
+    </article>
+
+    <div class="policy-grid">
+      <article class="card policy-card">
+        <h3>防災・減災</h3>
+        <ul class="policy-list">
+          <li>スロープ付き<strong>津波避難タワー</strong>・避難路の整備(都市防災事業計画 第2期)</li>
+          <li>佐喜浜町都呂地区に<strong>横穴式津波避難シェルター</strong>を設置</li>
+          <li>木造住宅の耐震診断・改修補助、ブロック塀対策補助、防災士資格取得の助成</li>
+          <li>津波浸水域にある<strong>市庁舎の高台移転を検討中</strong>(候補地は消防本部裏の統合中学校用地の東隣。2025年度に候補地調査)</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/navi/t0014.php" target="_blank" rel="noopener">防災対策課(市公式)</a> / <a href="https://www.kochinews.co.jp/article/detail/837932" target="_blank" rel="noopener">高知新聞(庁舎移転)</a></p>
+      </article>
+
+      <article class="card policy-card">
+        <h3>子育て・教育</h3>
+        <ul class="policy-list">
+          <li>乳幼児等医療費助成、多子世帯の保育料減免</li>
+          <li>子育て世代包括支援センター<strong>「むろとっこ」</strong>など支援拠点を整備、小児科オンライン相談も</li>
+          <li>市内4中学校を統合する<strong>統合中学校</strong>を整備中(2029年4月開校予定・令和8年度予算8.9億円)</li>
+          <li>室戸高校の魅力化: 入学祝金7万円・<strong>無料の公設塾</strong>・寮費補助。全国募集の「地域みらい留学365」に参加</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/navi/t0025.php" target="_blank" rel="noopener">こども子育て支援課(市公式)</a> / <a href="https://www.city.muroto.kochi.jp/pages/page2105.php" target="_blank" rel="noopener">室戸高校への支援(市公式)</a></p>
+      </article>
+
+      <article class="card policy-card">
+        <h3>移住・定住</h3>
+        <ul class="policy-list">
+          <li>空き家バンク物件の<strong>改修費を最大240万円</strong>(補助率10/10)補助</li>
+          <li>移住者向けに家賃補助(月1万円)・引越し費用(上限5万円)・家財処分(上限10万円)</li>
+          <li>仕事情報「ジョブ住室戸」、移住者特典プログラム、結婚新生活支援</li>
+          <li><strong>地域おこし協力隊</strong>をジオ教育・観光・深層水PR・定置網漁業・林業・農業など幅広い分野で募集</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page0021.php" target="_blank" rel="noopener">空き家改修費補助(市公式)</a> / <a href="https://muroto-kyoryokutai.jp/job/" target="_blank" rel="noopener">地域おこし協力隊</a></p>
+      </article>
+
+      <article class="card policy-card">
+        <h3>産業振興</h3>
+        <ul class="policy-list">
+          <li>市営<strong>アクア・ファーム</strong>を核に海洋深層水産業を振興。キンメダイ・サツキマスの<strong>陸上養殖</strong>にも展開</li>
+          <li><strong>企業誘致推進奨励金</strong>: 固定資産税相当額を5年間交付(新規雇用3人以上・投資500万円以上など)</li>
+          <li>創業支援・事業承継・特産品開発の補助金</li>
+          <li><strong>土佐備長炭</strong>(全国生産の8割以上が室戸産)のブランド振興</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/navi/t0007.php" target="_blank" rel="noopener">産業振興課(市公式)</a> / <a href="https://www.city.muroto.kochi.jp/pages/page0067.php" target="_blank" rel="noopener">企業誘致推進奨励金(市公式)</a></p>
+      </article>
+
+      <article class="card policy-card">
+        <h3>健康・医療</h3>
+        <ul class="policy-list">
+          <li><strong>「室戸家@ライン」</strong>: 高知大学と連携し、市立診療所と大学病院のカルテ共有、<strong>医療MaaS車両+オンライン診療</strong>を導入</li>
+          <li>市立の室戸診療所・室戸岬診療所を運営(室戸岬診療所はオンライン診療対応)</li>
+          <li>高知大学の<strong>「SAWACHI型健康社会共創拠点」</strong>(JST採択)に連携パートナーとして参画</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.kochi-u.ac.jp/kms/careline/muroto/about.php" target="_blank" rel="noopener">室戸家@ライン(高知大学)</a> / <a href="https://www.city.muroto.kochi.jp/pages/page0199.php" target="_blank" rel="noopener">在宅医療・介護連携(市公式)</a></p>
+      </article>
+
+      <article class="card policy-card">
+        <h3>観光・ジオパーク</h3>
+        <ul class="policy-list">
+          <li>室戸岬突端に<strong>観光拠点施設</strong>を整備(令和8年度予算5,876万円、2026年度中オープン予定)</li>
+          <li><strong>宿泊施設魅力向上支援補助金</strong>で宿泊施設の誘致・改善を支援</li>
+          <li>室戸世界ジオパークセンターを核に、教育・ツーリズム・地域振興を一体で推進(観光基本構想を策定)</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/navi/t0009.php" target="_blank" rel="noopener">観光ジオパーク推進課(市公式)</a> / <a href="https://www.kochinews.co.jp/article/detail/987242" target="_blank" rel="noopener">高知新聞(拠点施設)</a></p>
+      </article>
+    </div>
+
+    <div class="subsection-head">
+      <h3>市議会</h3>
+      <span class="subsection-en">CITY COUNCIL</span>
+    </div>
+
+    <div class="grid-2">
+      <article class="card">
+        <p class="card-kicker">市議会のしくみ</p>
+        <ul class="fact-list">
+          <li><span>議員定数</span>12人(任期4年)</li>
+          <li><span>議長</span>町田 又一</li>
+          <li><span>副議長</span>田渕 信量</li>
+          <li><span>定例会</span>年4回(3月・6月・9月・12月)。直近は令和8年6月 第4回定例会</li>
+          <li><span>常任委員会</span>総務文教委員会 / 産業厚生委員会(ほか議会運営委員会)</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page1006.php" target="_blank" rel="noopener">市議会について(市公式)</a> / <a href="https://www.city.muroto.kochi.jp/pages/page0948.php" target="_blank" rel="noopener">議会の組織(市公式)</a></p>
+      </article>
+
+      <article class="card">
+        <p class="card-kicker">直近の市議会議員選挙</p>
+        <ul class="fact-list">
+          <li><span>執行日</span>2023年4月23日(統一地方選)</li>
+          <li><span>構図</span>定数12に対し17人が立候補</li>
+          <li><span>投票率</span>63.61%(前回65.36%)</li>
+        </ul>
+        <p>次回の市議選は2027年春に見込まれます。</p>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page2785.php" target="_blank" rel="noopener">令和5年市議会議員選挙開票結果(市公式)</a></p>
+      </article>
+    </div>
+
+    <article class="card table-card">
+      <p class="card-kicker">室戸市議会議員(12人・2023年選挙の得票順)</p>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr><th scope="col">氏名</th><th scope="col">役職など</th><th scope="col" class="num">2023年選挙 得票</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>久保田 浩</td><td>産業厚生委員長</td><td class="num">706</td></tr>
+            <tr><td>山本 賢誓</td><td>議会運営副委員長</td><td class="num">585</td></tr>
+            <tr><td>澤山 保太郎</td><td></td><td class="num">489</td></tr>
+            <tr><td>池田 教子</td><td>総務文教委員長</td><td class="num">485</td></tr>
+            <tr><td>竹中 真智子</td><td>産業厚生副委員長</td><td class="num">447</td></tr>
+            <tr><td>町田 又一</td><td>議長</td><td class="num">445</td></tr>
+            <tr><td>田渕 信量</td><td>副議長</td><td class="num">440</td></tr>
+            <tr><td>小椋 利廣</td><td></td><td class="num">432</td></tr>
+            <tr><td>竹中 多津美</td><td>総務文教副委員長</td><td class="num">401</td></tr>
+            <tr><td>亀井 賢夫</td><td></td><td class="num">399</td></tr>
+            <tr><td>脇本 健樹</td><td>議会運営委員長</td><td class="num">371</td></tr>
+            <tr><td>河本 竜二</td><td></td><td class="num">348</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page2785.php" target="_blank" rel="noopener">開票結果(市公式)</a> / 役職は <a href="https://www.city.muroto.kochi.jp/pages/page0948.php" target="_blank" rel="noopener">議会の組織(市公式、2026年3月24日選任)</a></p>
+    </article>
+
+    <div class="subsection-head">
+      <h3>議会でいま話されていること</h3>
+      <span class="subsection-en">ON THE FLOOR</span>
+    </div>
+
+    <div class="grid-2">
+      <article class="card">
+        <p class="card-kicker">繰り返し議論される論点</p>
+        <ul class="policy-list">
+          <li><strong>統合中学校</strong> — 市内4中学校(室戸・羽根・吉良川・佐喜浜)を統合し、2029年4月開校予定。予定地の液状化対策や、開校後も進む生徒数減少(2035年度には90人程度の見込み)を巡って質疑が続く</li>
+          <li><strong>市庁舎の高台移転</strong> — 本庁舎が津波浸水想定区域内にあり、移転の是非・候補地・費用が継続的な論点。議会は東日本大震災被災地の庁舎再建も視察</li>
+          <li><strong>シレスト室戸</strong> — 海洋深層水の温浴施設。運営を巡る事故対応や市の責任が問われ、2025年9月には存続を求める請願を採択</li>
+          <li><strong>キンメダイ不漁と水産業</strong> — 「船を出せば赤字」という漁業者の窮状を背景に、水産拠点施設や深層水養殖の起業支援を求める質問が相次ぐ</li>
+          <li><strong>財政と人件費</strong> — 人件費は令和元年度の約17億円から令和6年度には約23億円へ増加。財政運営計画や議員定数の見直しも話題に</li>
+          <li><strong>室戸高校の存続</strong> — 県の小規模校指定を受け、寮の増築や市営の臨時教育寮の設置など生徒確保策を議論</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page0951.php" target="_blank" rel="noopener">定例会・臨時会 会議資料(市公式)</a> / 議会だより第120号 / <a href="https://www.kochinews.co.jp/tag/detail/city_muroto" target="_blank" rel="noopener">高知新聞</a></p>
+      </article>
+
+      <article class="card">
+        <p class="card-kicker">直近の定例会から</p>
+        <ul class="fact-list">
+          <li><span>令和8年6月</span>補正予算、シェアオフィス整備工事契約、防災行政無線の更新、室戸高校臨時教育寮の指定管理者指定など議案13件+諮問1件を審議</li>
+          <li><span>令和8年3月</span>令和8年度予算、統合中学校の設計・建設工事契約、過疎地域持続的発展計画など42議案をすべて可決</li>
+          <li><span>令和7年12月</span>5.4億円の補正予算を巡り、修正案が5対6で否決・原案が6対5で可決という僅差の攻防。室戸岬観光拠点施設の設置条例も制定</li>
+          <li><span>令和7年9月</span>統合中学校開校準備委員会の設置条例を可決。「シレスト存続」を求める請願を採択</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page3592.php" target="_blank" rel="noopener">令和8年会議録(市公式)</a> / <a href="https://www.city.muroto.kochi.jp/pages/page3221.php" target="_blank" rel="noopener">令和7年会議録(市公式)</a></p>
+      </article>
+    </div>
+
+    <article class="card">
+      <p class="card-kicker">一般質問のテーマから(令和8年6月定例会・5議員)</p>
+      <div class="plan-chips">
+        <span>担い手確保と若者向け住宅</span>
+        <span>中学校部活動の地域移行</span>
+        <span>職員へのカスハラ対策</span>
+        <span>電子入札など入札制度改革</span>
+        <span>こども議会の開催</span>
+        <span>林道整備・市有林の間伐</span>
+        <span>紙オムツの無料支給</span>
+        <span>放課後児童クラブ</span>
+        <span>統合中学校の液状化対策</span>
+        <span>シレスト室戸の衛生管理</span>
+        <span>室戸岬観光施設の是非</span>
+        <span>浸水区域の集団移転</span>
+        <span>次期市長選挙</span>
+      </div>
+      <p>定例会(年4回)ごとに複数の議員が市政を質します。テーマは防災・教育から入札制度、市長の進退まで幅広く、通告内容と会議録は市公式サイトで全文公開されています。</p>
+      <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page0951.php" target="_blank" rel="noopener">一般質問通告内容(市公式PDF)</a></p>
+    </article>
+
+    <div class="inline-links">
+      <a href="https://www.city.muroto.kochi.jp/pages/page3592.php" target="_blank" rel="noopener">会議録を読む(令和8年)</a>
+      <a href="https://www.city.muroto.kochi.jp/pages/page3564.php" target="_blank" rel="noopener">議会だより(令和8年)</a>
+      <a href="https://www.city.muroto.kochi.jp/pages/page0951.php" target="_blank" rel="noopener">定例会・臨時会の日程と資料</a>
+    </div>
+  </section>
+
+  <!-- ============ 02 経済・産業 ============ -->
+  <section id="keizai" class="section section-alt" aria-labelledby="keizai-heading">
+    <header class="section-head">
+      <span class="section-no">02</span>
+      <div>
+        <p class="section-kicker">ECONOMY &amp; INDUSTRY</p>
+        <h2 id="keizai-heading">経済・産業</h2>
+      </div>
+    </header>
+
+    <article class="card chart-card viz-root">
+      <div class="chart-head">
+        <h3>推計人口の推移</h3>
+        <p class="chart-sub">各年10月1日時点(2026年のみ6月1日)・高知県推計人口</p>
+      </div>
+      <div id="chart-population" class="chart-body" aria-label="室戸市の推計人口の推移を示す折れ線グラフ"></div>
+      <details class="table-view">
+        <summary>数値表で見る</summary>
+        <div id="table-population" class="table-scroll"></div>
+      </details>
+      <div class="callout">
+        <strong>2025年8月、人口1万人割れ。</strong>
+        高知県の推計人口(2025年8月1日現在)で室戸市は9,995人となり、西日本の「市」で初めて1万人を下回りました。2010年からの15年余りで人口はおよそ3分の2に減少しています。
+        <a href="https://www.kochinews.co.jp/article/detail/899554" target="_blank" rel="noopener">高知新聞</a>
+      </div>
+      <p class="card-source">出典: <a href="https://www.pref.kochi.lg.jp/doc/t-suikei/" target="_blank" rel="noopener">高知県推計人口(県統計分析課)</a></p>
+    </article>
+
+    <div class="grid-2">
+      <article class="card chart-card viz-root">
+        <div class="chart-head">
+          <h3>年齢3区分別の人口構成</h3>
+          <p class="chart-sub">令和8年6月1日現在・総人口9,684人</p>
+        </div>
+        <div id="chart-age" class="chart-body"></div>
+        <details class="table-view">
+          <summary>数値表で見る</summary>
+          <div id="table-age" class="table-scroll"></div>
+        </details>
+        <p>市民のおよそ2人に1人が65歳以上。15歳未満は537人で、全体の5.5%です。世帯数は5,218世帯。</p>
+        <p class="card-source">出典: <a href="https://www.pref.kochi.lg.jp/doc/t-suikei/" target="_blank" rel="noopener">高知県推計人口</a></p>
+      </article>
+
+      <article class="card chart-card viz-root">
+        <div class="chart-head">
+          <h3>産業別就業者の構成(室戸市と全国)</h3>
+          <p class="chart-sub">2020年国勢調査・就業者4,814人</p>
+        </div>
+        <div id="chart-industry" class="chart-body"></div>
+        <details class="table-view">
+          <summary>数値表で見る</summary>
+          <div id="table-industry" class="table-scroll"></div>
+        </details>
+        <p>漁業・農業など第1次産業の比率21.3%は全国平均(3.5%)の約6倍。一次産業がまちの背骨であることが分かります。</p>
+        <p class="card-source">出典: 2020年国勢調査(総務省統計局)</p>
+      </article>
+    </div>
+
+    <div class="industry-grid">
+      <article class="card industry-card">
+        <span class="industry-icon" aria-hidden="true">魚</span>
+        <h3>キンメダイ漁業</h3>
+        <p>西日本一の水揚げを誇ってきた高級魚キンメダイの産地(室津港)。ただし黒潮大蛇行の影響とされる不漁が深刻で、水揚げ量は3年で200トン台から34トンへ激減。操業隻数も最盛期の約50隻から約5隻まで減少しています。</p>
+        <p class="card-source">出典: <a href="https://www.kochinews.co.jp/article/detail/751120" target="_blank" rel="noopener">高知新聞(不漁)</a> / <a href="https://www.kochinews.co.jp/article/detail/751248" target="_blank" rel="noopener">高知新聞(採算)</a></p>
+      </article>
+      <article class="card industry-card">
+        <span class="industry-icon" aria-hidden="true">水</span>
+        <h3>海洋深層水</h3>
+        <p>1989年、高知県が日本初の陸上型取水施設を室戸に設置。「アクア・ファーム」は1日最大4,000㎥を取水し、水・塩・食品・化粧品など関連製品を手がける企業は県内外で110社超、約150億円規模の産業に成長したとされます。キンメダイやサツキマスの陸上養殖にも活用が広がっています。</p>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/aquafarm/" target="_blank" rel="noopener">アクア・ファーム(市公式)</a></p>
+      </article>
+      <article class="card industry-card">
+        <span class="industry-icon" aria-hidden="true">岬</span>
+        <h3>観光・ジオパーク</h3>
+        <p>市全域が室戸ユネスコ世界ジオパーク(2015年正式認定)。旧椎名小学校を改修した「むろと廃校水族館」(2018年開館)は開館1年目に約17万人が来館する人気施設に。2026年度中には室戸岬突端エリアに新たな観光拠点施設のオープンが予定されています。</p>
+        <p class="card-source">出典: <a href="https://www.muroto-geo.jp/" target="_blank" rel="noopener">室戸ジオパーク</a> / <a href="https://www.kochinews.co.jp/article/detail/987242" target="_blank" rel="noopener">高知新聞(拠点施設)</a></p>
+      </article>
+      <article class="card industry-card">
+        <span class="industry-icon" aria-hidden="true">納</span>
+        <h3>ふるさと納税</h3>
+        <p>2024年度の寄附受入額は16.59億円。市税収入(約10.2億円)を上回る規模で市財政を下支えしています。令和8年度予算でも業務委託3.1億円を計上して推進中。返礼品はキンメダイなど海の幸や深層水関連の商品が中心です。</p>
+        <p class="card-source">出典: <a href="https://furusato-money-ranking.local-opendata.jp/39/39202/" target="_blank" rel="noopener">総務省現況調査(集計サイト)</a></p>
+      </article>
+    </div>
+
+    <article class="card chart-card viz-root">
+      <div class="chart-head">
+        <h3>ふるさと納税 寄附受入額の推移</h3>
+        <p class="chart-sub">年度・億円(総務省 ふるさと納税に関する現況調査)</p>
+      </div>
+      <div id="chart-furusato" class="chart-body"></div>
+      <details class="table-view">
+        <summary>数値表で見る</summary>
+        <div id="table-furusato" class="table-scroll"></div>
+      </details>
+      <p class="card-source">出典: <a href="https://furusato-money-ranking.local-opendata.jp/39/39202/" target="_blank" rel="noopener">総務省現況調査(集計サイト)</a></p>
+    </article>
+  </section>
+
+  <!-- ============ 03 予算・財政 ============ -->
+  <section id="zaisei" class="section" aria-labelledby="zaisei-heading">
+    <header class="section-head">
+      <span class="section-no">03</span>
+      <div>
+        <p class="section-kicker">BUDGET &amp; FINANCE</p>
+        <h2 id="zaisei-heading">予算・財政</h2>
+      </div>
+    </header>
+
+    <article class="card budget-lead">
+      <p class="card-kicker">令和8年度(2026年度)一般会計当初予算</p>
+      <p class="budget-figure">198<span class="budget-small">億</span>6,242<span class="budget-small">万円</span></p>
+      <p class="budget-delta">前年度(175億5,097万円)比 <strong>+13.2%</strong>。統合中学校や消防庁舎の整備など投資的経費(構成比24.0%)が押し上げています。</p>
+      <div class="budget-themes">
+        <div><span class="theme-no">重点1</span><strong>命を守る</strong> — 防災対策(統合中学校整備・消防庁舎耐震化・津波避難路)と地域医療対策</div>
+        <div><span class="theme-no">重点2</span><strong>室戸を創る</strong> — 移住・定住促進、少子高齢化対策、雇用・産業振興、教育、観光・ジオパーク</div>
+      </div>
+      <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pbfile/m003468/pbf20260602171021_HVjoLGSXNi4t.pdf" target="_blank" rel="noopener">広報むろと 2026年6月号「室戸市の財政状況をお知らせします」(PDF)</a></p>
+    </article>
+
+    <div class="grid-2">
+      <article class="card chart-card viz-root">
+        <div class="chart-head">
+          <h3>歳入の内訳</h3>
+          <p class="chart-sub">令和8年度当初予算・億円</p>
+        </div>
+        <div id="chart-revenue" class="chart-body"></div>
+        <div id="chart-jishu" class="chart-meter"></div>
+        <p>自前の財源(自主財源)は37.4%にとどまり、地方交付税など国・県に依存する財源が62.6%を占めます。市税は10.2億円で歳入全体の5.1%です。</p>
+      </article>
+
+      <article class="card chart-card viz-root">
+        <div class="chart-head">
+          <h3>歳出の内訳(目的別)</h3>
+          <p class="chart-sub">令和8年度当初予算・億円</p>
+        </div>
+        <div id="chart-expenditure" class="chart-body"></div>
+        <p>総務費(29.7%)と民生費(22.0%)で歳出の半分。性質別では普通建設事業費が47.0億円(23.7%)と大きく、大型整備の年であることを示します。</p>
+      </article>
+    </div>
+
+    <article class="card table-card">
+      <p class="card-kicker">当初予算に計上された主な事業(令和8年度)</p>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead><tr><th scope="col">事業名</th><th scope="col">内容</th><th scope="col" class="num">金額</th></tr></thead>
+          <tbody>
+            <tr><td>統合中学校施設整備事業</td><td>統合中学校の設計・建設工事等</td><td class="num">8億9,854万円</td></tr>
+            <tr><td>消防庁舎耐震補強・増改築事業</td><td>消防庁舎の耐震補強・増改築工事</td><td class="num">8億375万円</td></tr>
+            <tr><td>市道等整備事業(国庫事業)</td><td>東ノ川橋(吉良川町)ほか</td><td class="num">5億1,700万円</td></tr>
+            <tr><td>シェアオフィス整備工事</td><td>シェアオフィスの整備</td><td class="num">3億5,880万円</td></tr>
+            <tr><td>ふるさと納税支援等委託業務</td><td>ふるさと納税業務の一部委託</td><td class="num">3億1,050万円</td></tr>
+            <tr><td>菜生漁具共同作業所改築事業</td><td>共同作業所の改築工事</td><td class="num">2億8,630万円</td></tr>
+            <tr><td>ブロードバンド放送系設備更新事業</td><td>ケーブルテレビ放送用設備の更新</td><td class="num">2億5,229万円</td></tr>
+            <tr><td>市営住宅改修事業</td><td>屋根外壁等の改修</td><td class="num">2億107万円</td></tr>
+            <tr><td>空き家活用住宅整備事業</td><td>借り上げた空き家の整備</td><td class="num">1億8,779万円</td></tr>
+            <tr><td>室戸岬観光拠点施設整備事業</td><td>室戸岬に観光拠点施設を整備</td><td class="num">5,876万円</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="card-source">出典: 広報むろと 2026年6月号</p>
+    </article>
+
+    <div class="finance-tiles" role="list">
+      <div class="ftile" role="listitem">
+        <span class="ftile-label">財政力指数</span>
+        <span class="ftile-value">0.22</span>
+        <p>1に近いほど自力で財政を賄える指標。0.22は地方交付税への依存度が高いことを示します(前年度も0.22)。</p>
+      </div>
+      <div class="ftile" role="listitem">
+        <span class="ftile-label">経常収支比率</span>
+        <span class="ftile-value">96.3<span class="ftile-unit">%</span></span>
+        <p>経常的な収入が人件費・公債費などの固定的支出にどれだけ使われるか。前年度の93.9%から上昇し、財政の硬直化がやや進行。</p>
+      </div>
+      <div class="ftile" role="listitem">
+        <span class="ftile-label">実質公債費比率</span>
+        <span class="ftile-value">9.2<span class="ftile-unit">%</span></span>
+        <p>借金返済の重さを示す指標。早期健全化基準(25%)は大きく下回っています(前年度8.8%)。</p>
+      </div>
+      <div class="ftile" role="listitem">
+        <span class="ftile-label">将来負担比率</span>
+        <span class="ftile-value">—<span class="ftile-unit">(算定なし)</span></span>
+        <p>基金など充当可能な財源が将来の負担額を上回っており、比率としては算定されない健全な状態です。</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <article class="card">
+        <p class="card-kicker">貯金と借金(令和8年5月31日現在・見込)</p>
+        <ul class="fact-list">
+          <li><span>基金残高(計)</span>約91.9億円(財政調整28.8億・減債9.0億・特定目的54.1億)</li>
+          <li><span>一般会計債残高</span>135億2,339万円(全会計計 150億6,814万円)</li>
+        </ul>
+        <p class="card-source">出典: 広報むろと 2026年6月号</p>
+      </article>
+      <article class="card">
+        <p class="card-kicker">令和6年度決算(普通会計)</p>
+        <ul class="fact-list">
+          <li><span>歳入総額</span>156億863万円</li>
+          <li><span>歳出総額</span>150億6,298万円</li>
+          <li><span>実質収支</span>4億8,844万円の黒字(実質収支比率8.4%)</li>
+        </ul>
+        <p class="card-source">出典: <a href="https://www.city.muroto.kochi.jp/pages/page0071.php" target="_blank" rel="noopener">令和6年度財政状況資料集(市公式)</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 04 分析 ============ -->
+  <section id="bunseki" class="section section-alt" aria-labelledby="bunseki-heading">
+    <header class="section-head">
+      <span class="section-no">04</span>
+      <div>
+        <p class="section-kicker">ANALYSIS</p>
+        <h2 id="bunseki-heading">分析 — 課題と希望の光</h2>
+      </div>
+    </header>
+    <p class="analysis-note">※このセクションは、本サイトに掲載した人口・産業・財政・議会のデータをもとにした<strong>編集部の見立て(非公式の分析)</strong>です。市の公式見解ではありません。各数値の出典は該当セクションを参照してください。</p>
+
+    <div class="analysis-grid">
+      <article class="card analysis-card challenge">
+        <p class="analysis-kicker">CHALLENGES</p>
+        <h3>重くのしかかる課題</h3>
+        <ul class="num-list">
+          <li><strong>人口減少の最前線に立つ</strong> — 西日本の市で初めて1万人を割り、直近8カ月でも278人減(月平均約35人)。市民の2人に1人が65歳以上で、15歳未満はわずか5.5%。あらゆる課題の根がここにあります。</li>
+          <li><strong>基幹産業・漁業の危機</strong> — キンメダイの水揚げは3年で200トン台から34トンへ、操業は約5隻まで縮小。就業者の2割が第1次産業のまちで、その土台が揺らいでいます。</li>
+          <li><strong>自立度の低い財政</strong> — 財政力指数0.22、歳入の6割超が国・県からの財源。経常収支比率96.3%で自由に使えるお金の余地は小さく、人件費も令和元年度の約17億円から令和6年度には約23億円へ増加。ふるさと納税(16.6億円)が市税(10.2億円)を上回る構造は、制度変更に弱い不安定さと隣り合わせです。</li>
+          <li><strong>南海トラフ地震への備え</strong> — 市庁舎そのものが津波浸水想定区域内にあり、高台移転はまだ調査段階。避難インフラ・耐震化を含め、防災だけで巨額の投資が続きます。</li>
+          <li><strong>教育インフラの縮小</strong> — 統合後の中学生は2035年度に90人程度の見込み。室戸高校も県の小規模校指定を受けており、進学を機にした若者流出が人口減に拍車をかける構図です。</li>
+        </ul>
+      </article>
+
+      <article class="card analysis-card hope">
+        <p class="analysis-kicker">BRIGHT SPOTS</p>
+        <h3>希望の光</h3>
+        <ul class="num-list">
+          <li><strong>他にない資源の厚み</strong> — 海洋深層水は110社超・約150億円規模の産業に成長し、陸上養殖への展開も進行中。ユネスコ世界ジオパーク、全国生産の8割を占める土佐備長炭など、「室戸にしかないもの」が揃っています。</li>
+          <li><strong>医療×大学連携の先進モデル</strong> — 高知大学と組んだ「室戸家@ライン」で医療MaaS車両やカルテ共有を導入。過疎地医療の全国モデルになり得る取り組みです。</li>
+          <li><strong>観光の再設計が進行中</strong> — 「むろと廃校水族館」という全国区のヒット(1年目約17万人)に続き、2026年度中に室戸岬の新観光拠点が開業予定。「水族館だけ」から周遊型観光への転換を狙います。</li>
+          <li><strong>全国屈指の移住支援</strong> — 空き家改修に最大240万円(全額補助)という思い切った制度。地域おこし協力隊も漁業・林業・ジオ教育など8分野で募集しており、担い手の入口は広い。</li>
+          <li><strong>投資できる財政体力</strong> — 基金約92億円、将来負担比率は算定なし、実質公債費比率9.2%。課題は多くとも、統合中学校や消防庁舎など「未来への大型投資」をやり切る備えは確保されています。</li>
+          <li><strong>8年ぶりの市政転換点</strong> — 2026年11月の市長選で新しいリーダーが誕生する見通し。深層水・観光・教育・防災をどう束ね直すか、人口1万人割れ後で初めての市政の選択になります。</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 05 ニュース ============ -->
+  <section id="news" class="section" aria-labelledby="news-heading">
+    <header class="section-head">
+      <span class="section-no">05</span>
+      <div>
+        <p class="section-kicker">NEWS &amp; TOPICS</p>
+        <h2 id="news-heading">ニュース・トピック</h2>
+      </div>
+    </header>
+
+    <ol class="timeline">
+      <li>
+        <span class="tl-date">2026年11月<em>予定</em></span>
+        <div class="tl-body">
+          <h3>室戸市長選挙 — 11月15日投票へ</h3>
+          <p>現市長の任期満了(12月3日)に伴う市長選。告示は11月8日の予定。現職の不出馬表明により、8年ぶりに市政トップが交代する見通しです。</p>
+          <a class="tl-source" href="https://go2senkyo.com/local/senkyo/25847" target="_blank" rel="noopener">選挙ドットコム</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2026年7月</span>
+        <div class="tl-body">
+          <h3>陸上養殖の用地費を巡る削除動議、市議会が否決</h3>
+          <p>市が進める海洋深層水を生かした陸上養殖の企業誘致を巡り、用地費の削除動議が市議会に提出されましたが否決されたと高知新聞が報じました。</p>
+          <a class="tl-source" href="https://www.kochinews.co.jp/tag/detail/city_muroto" target="_blank" rel="noopener">高知新聞(2026年7月3日)</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2026年6月</span>
+        <div class="tl-body">
+          <h3>植田市長、次期市長選への不出馬を表明</h3>
+          <p>病気治療を理由に3期目を目指さない意向を表明したと高知新聞が報道(6月13日)。これに先立ち新人の谷口洋介氏が出馬を表明しており(6月12日)、秋の市長選は新しい市長を選ぶ選挙になる見通しです。</p>
+          <a class="tl-source" href="https://www.kochinews.co.jp/tag/detail/city_muroto" target="_blank" rel="noopener">高知新聞</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2026年6月</span>
+        <div class="tl-body">
+          <h3>令和8年度予算は198.6億円、前年度比+13.2%</h3>
+          <p>統合中学校整備(8.9億円)、消防庁舎耐震化(8.0億円)など投資的経費が押し上げ。広報むろと6月号で財政状況が公表されました。</p>
+          <a class="tl-source" href="https://www.city.muroto.kochi.jp/pbfile/m003468/pbf20260602171021_HVjoLGSXNi4t.pdf" target="_blank" rel="noopener">広報むろと6月号(PDF)</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2026年6月</span>
+        <div class="tl-body">
+          <h3>講演会「南海トラフ地震と室戸半島」開催</h3>
+          <p>室戸ジオパーク推進協議会主催。南海トラフ地震への備えは、令和8年度予算の重点「命を守る」にも掲げられた市の最重要課題のひとつです。</p>
+          <a class="tl-source" href="https://www.muroto-geo.jp/" target="_blank" rel="noopener">室戸ユネスコ世界ジオパーク</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2026年5月</span>
+        <div class="tl-body">
+          <h3>第36回 土佐室戸鯨舟競漕大会、参加チーム募集</h3>
+          <p>捕鯨のまちの伝統を受け継ぐ夏の恒例行事。観光協会が参加チームの募集を開始しました。</p>
+          <a class="tl-source" href="https://www.muroto-kankou.com/" target="_blank" rel="noopener">室戸市観光協会</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2026年4月</span>
+        <div class="tl-body">
+          <h3>室戸岬突端に観光拠点施設、2026年度中オープンへ</h3>
+          <p>観光案内やカフェを備えた拠点施設を整備中。「観光の目的地が廃校水族館だけになっている」現状を変え、岬まで足を伸ばしてもらう狙いです。</p>
+          <a class="tl-source" href="https://www.kochinews.co.jp/article/detail/987242" target="_blank" rel="noopener">高知新聞</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2026年</span>
+        <div class="tl-body">
+          <h3>ジオパークの海岸に「白いニホンカモシカ」</h3>
+          <p>室戸ユネスコ世界ジオパークの海岸で白い個体のニホンカモシカが撮影され話題に。感染症の疑いもあり、接触しないよう注意が呼びかけられています。</p>
+          <a class="tl-source" href="https://www.kochinews.co.jp/article/detail/991163" target="_blank" rel="noopener">高知新聞</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2025年8月</span>
+        <div class="tl-body">
+          <h3>推計人口が1万人割れ — 西日本の「市」で初</h3>
+          <p>8月1日現在の高知県推計人口で室戸市は9,995人に。漁業の低迷や若年層の流出が背景とされます。</p>
+          <a class="tl-source" href="https://www.kochinews.co.jp/article/detail/899554" target="_blank" rel="noopener">高知新聞</a>
+        </div>
+      </li>
+      <li>
+        <span class="tl-date">2025年3月</span>
+        <div class="tl-body">
+          <h3>市庁舎移転の調査費を初計上 — 市民の賛否は拮抗</h3>
+          <p>南海トラフ地震への備えとして消防本部周辺を候補地に庁舎移転の調査費が2025年度予算に初めて計上されました。移転への賛否は拮抗しており、今後の市政の大きな論点です。</p>
+          <a class="tl-source" href="https://www.kochinews.co.jp/article/detail/837932" target="_blank" rel="noopener">高知新聞</a>
+        </div>
+      </li>
+    </ol>
+    <p class="section-note">最新の報道は <a href="https://www.kochinews.co.jp/tag/detail/city_muroto" target="_blank" rel="noopener">高知新聞・室戸市タグ</a> / <a href="https://news.web.nhk/newsweb/area/390" target="_blank" rel="noopener">NHK高知 NEWS WEB</a> で追えます。</p>
+  </section>
+
+  <!-- ============ 06 情報源 ============ -->
+  <section id="links" class="section section-alt" aria-labelledby="links-heading">
+    <header class="section-head">
+      <span class="section-no">06</span>
+      <div>
+        <p class="section-kicker">PRIMARY SOURCES</p>
+        <h2 id="links-heading">一次情報源リンク集</h2>
+      </div>
+    </header>
+
+    <div class="links-grid">
+      <div class="link-group">
+        <h3>市政・市公式</h3>
+        <ul>
+          <li><a href="https://www.city.muroto.kochi.jp/" target="_blank" rel="noopener">室戸市公式サイト</a><span>くらし・観光・移住の総合入口</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/navi/a02.php" target="_blank" rel="noopener">行政情報</a><span>市政全般のハブ</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/navi/koho.php" target="_blank" rel="noopener">広報むろと</a><span>毎月の広報誌バックナンバー</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/gaiyo.php" target="_blank" rel="noopener">室戸市の概要</a><span>基礎データ・沿革</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/bousaimap/" target="_blank" rel="noopener">防災マップ</a><span>津波防災など</span></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>議会</h3>
+        <ul>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page0946.php" target="_blank" rel="noopener">議会事務局</a><span>市議会の入口</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page3592.php" target="_blank" rel="noopener">会議録(令和8年)</a><span>本会議の議事録</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page3564.php" target="_blank" rel="noopener">議会だより(令和8年)</a><span>議会広報誌</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page0951.php" target="_blank" rel="noopener">定例会・臨時会日程</a><span>年4回の定例会</span></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>統計・データ</h3>
+        <ul>
+          <li><a href="https://www.pref.kochi.lg.jp/doc/t-suikei/" target="_blank" rel="noopener">高知県推計人口</a><span>毎月公表・市町村別</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page0518.php" target="_blank" rel="noopener">市の人口統計</a><span>毎月末の年齢別・地区別</span></li>
+          <li><a href="https://www.e-stat.go.jp/" target="_blank" rel="noopener">e-Stat</a><span>国勢調査・経済センサス等</span></li>
+          <li><a href="https://www.stat.go.jp/data/s-sugata/index.html" target="_blank" rel="noopener">統計でみる市区町村のすがた</a><span>市区町村別の基礎統計</span></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>財政</h3>
+        <ul>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page0071.php" target="_blank" rel="noopener">財政状況資料集</a><span>決算カード・財政指標</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page0073.php" target="_blank" rel="noopener">健全化判断比率の公表</a><span>財政健全化法に基づく公表</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/pages/page0072.php" target="_blank" rel="noopener">財務書類の公表</a><span>統一的な基準の財務書類</span></li>
+          <li><a href="https://www.soumu.go.jp/iken/zaisei/jyoukyou_shiryou/index.html" target="_blank" rel="noopener">総務省 財政状況資料集</a><span>全国比較の一次資料</span></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>観光・産業</h3>
+        <ul>
+          <li><a href="https://www.muroto-kankou.com/" target="_blank" rel="noopener">室戸市観光協会</a><span>イベント・観光情報</span></li>
+          <li><a href="https://www.muroto-geo.jp/" target="_blank" rel="noopener">室戸ユネスコ世界ジオパーク</a><span>ジオパーク公式</span></li>
+          <li><a href="https://www.city.muroto.kochi.jp/aquafarm/" target="_blank" rel="noopener">海洋深層水アクア・ファーム</a><span>深層水の給水・分水</span></li>
+          <li><a href="https://www.kiramesse-muroto.jp/" target="_blank" rel="noopener">道の駅キラメッセ室戸</a><span>主要立ち寄り施設</span></li>
+          <li><a href="https://muroto.net/" target="_blank" rel="noopener">まるっとむろと</a><span>体験プログラム</span></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>ニュース・メディア</h3>
+        <ul>
+          <li><a href="https://www.kochinews.co.jp/tag/detail/city_muroto" target="_blank" rel="noopener">高知新聞(室戸市タグ)</a><span>室戸関連記事の一覧</span></li>
+          <li><a href="https://news.web.nhk/newsweb/area/390" target="_blank" rel="noopener">NHK高知 NEWS WEB</a><span>県域ニュース</span></li>
+          <li><a href="https://www.sunsuntv.co.jp/news/" target="_blank" rel="noopener">高知さんさんテレビ</a><span>県内民放ニュース</span></li>
+          <li><a href="https://www.facebook.com/city.muroto/" target="_blank" rel="noopener">室戸市役所 Facebook</a><span>市の公式発信</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-brand"><span>室戸ポータル</span> MUROTO CIVIC PORTAL</p>
+    <p class="footer-disclaimer">
+      本サイトは公開情報をもとに個人が編集した<strong>非公式</strong>のポータルサイトです。室戸市役所および関係機関とは一切関係ありません。
+      掲載数値は各出典に記載の時点のものであり、最新かつ正確な情報は必ず一次情報源をご確認ください。
+    </p>
+    <p class="footer-meta">
+      データ時点: 2026年7月3日編集 /
+      主な出典: 高知県推計人口・2020年国勢調査・広報むろと2026年6月号・令和6年度財政状況資料集・室戸市公式サイト・高知新聞
+    </p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

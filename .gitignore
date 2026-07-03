@@ -1,0 +1,9 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# test artifacts
+.playwright-mcp/
+*.png
+*.jpeg
+!assets/**
