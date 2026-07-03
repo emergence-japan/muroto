@@ -359,6 +359,7 @@ a:hover { color: var(--vermilion); text-decoration-color: currentColor; }
   white-space: nowrap;
 }
 .data-table .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bill-desc { display: block; font-size: 0.75rem; font-weight: 400; color: var(--muted); line-height: 1.7; margin-top: 0.2rem; }
 .data-table tbody tr:hover { background: rgba(42, 120, 214, 0.05); }
 
 /* ==========================================================================
